@@ -64,8 +64,11 @@
             margin-bottom: 10px;           
             align-items: center !important;
         }
-        #pre{
+        details pre{
             font-size: 30px;
+            font-weight: bold;
+            color: #160D0A;
+            text-align:center ;
         }
         .prz{
             display: flex;
@@ -75,57 +78,149 @@
             color: #160D0A;
             text-align: center;
             justify-content: space-between;
+            
+        }
+        .prz p{
             font-size: 30px;
         }
 
-        @media screen and (max-width: 1024px){
-                pre{
-                    font-size: 28px;
-                }
-                details p{
-                     font-size: 27px;
-                }
-  
+        @media screen and (width: 390px){
+            details pre{
+            font-size: 10px;
+            }
         }
-        @media screen and (max-width: 375px){
+        @media screen and (min-width: 514px){
+        #sc {
+            top:83%;
+            }
+        }
+        @media screen and (min-width: 912px){
+            #berger{
+            margin-top: 30%;
+        }
+        #boisson{
+            margin-bottom: 30%;
+        }
+        }
+
+        @media screen and (min-width: 280px){
            footer img {
-            width: 43px;
-            height: 43px;
-            margin: 20px;
+            width: 30px;
+            height: 30px;
+            margin: 12px;
         }
-        .prz{
-            width: 55%; 
-            font-size: 15%;
+         details pre{
+                    font-size: 15px;
+                }
         }
-        }
-        @media screen and (max-width: 414px){ 
+        @media screen and (width: 360px){
            footer img {
-            width: 43px;
-            height: 43px;
-            margin: 20px;
+            width: 38px;
+            height: 38px;
+            margin: 18px;
+           }
+          details pre{
+            font-size: 20px;
+          }
+          #c {
+            right: 10px;
+            }
+         #sc {
+            right: 7px;
+            }
         }
-        .prz{
-            width: 70%; 
-            font-size: 15%;
+        @media screen and (min-width: 1024px){
+            details pre{
+                    font-size: 26px;
+                }
+            #c {
+            top:81%;
+            right: 10px;
+            }
+        #sc {
+            top:83%;
+            }
         }
-       }
-        @media screen and (min-width: 767px) {
+        @media screen and (min-width: 375px){
             footer img {
             width: 40px;
             height: 40px;
-            margin: 15px;
+            margin: 19px;
+        }
+        details pre{
+            font-size: 21px;
+        }
+        #c {
+            top:81%;
+            right: 10px;
+            }
+         #sc {
+            top:86%;
+            right: 7px;
+            }
+        }
+        @media screen and (min-width: 414px){ 
+            footer img {
+            width: 40px;
+            height: 40px;
+            margin: 19px;
+        }
+        details pre{
+            font-size: 23px;
+        }
+        #c {
+              top: 81%;
+            }
+        #sc {
+            top:86%;
+            }
+       }
+        @media screen and (min-width: 768px) {
+            footer img {
+            width: 50px;
+            height: 50px;
+            margin: 25px;
+        }
+        details pre{
+            font-size: 35px;
+        }
+        #c {
+            top:77%;
+            right: 10px;
+            }
+        #sc {
+            top:81%;
+            }
+        #berger{
+            margin-top: 11%;
+        }
+        #boisson{
+            margin-bottom: 10%;
         }
          
         }
         @media screen and (min-width: 820px) {
-        footer img {
-            width: 50px;
-            height: 50px;
-            margin: 20px;
+            footer img {
+            width: 55px;
+            height: 55px;
+            margin: 25px;
         }
-        pre{
-            font-size: 20px;
+        details pre{
+            font-size: 35px;
+        }
+        #c {
+            top:81%;
+            right: 10px;
             }
+        #sc {
+            top:85%;
+            }
+        #berger{
+            margin-top: 20%;
+        }
+        #boisson{
+            margin-bottom: 20%;
+        }
       }
         
     </style>
@@ -170,9 +265,9 @@
                 <summary
                     style=" text-align: center;  border-radius: 40px; background:  rgba(99, 100, 97, 0.651);  margin: 50px; font-size: 25px; margin-top: 60px; font-weight: bold; ">
                     Sandwich</summary>
-                 <div class="prz"> <p > Cheese Berger </p> <p> 250 DA </p> </div>
-                 <div class="prz"> <p> Cheese Berger Big </p> <p> 400 DA </p> </div>
-                 <div class="prz"> <p> Chiken Berger </p> <p> 200 DA </p> </div>
+                 <div class="prz"> <p >Cheese berger </p> <p> 250 DA </p> </div>
+                 <div class="prz"> <p> Big Cheese berger  </p> <p> 400 DA </p> </div>
+                 <div class="prz"> <p> Chiken berger </p> <p> 200 DA </p> </div>
                  <div class="prz"> <p> Tacos poulet  </p> <p> 350 DA </p> </div>
                  <div class="prz"> <p> Tacos viande </p> <p> 350 DA </p> </div>
                  <div class="prz"> <p> Tacos fois </p> <p> 400 DA </p> </div>
@@ -190,9 +285,9 @@
                 <summary
                     style="  border-radius: 50px; text-align: center; background:  rgba(99, 100, 97, 0.651);   margin: 50px; font-size: 25px; font-weight: bold; ">
                     pizza</summary>
-                <div class="prz"> <p >pizza poulet </p> <p> 400 DA </p> </div>
-                <div class="prz"> <p> pizza viande </p> <p> 400 DA </p> </div>
-                <div class="prz"> <p> pizza speciale </p> <p> 550 DA </p> </div>
+                <pre>pizza poulet            400 DA</pre>
+                <pre>pizza viande            400 DA</pre>
+                <pre>pizza speciale          550 DA</pre>
             </details>
         </span>
 
@@ -202,10 +297,10 @@
                     style="border-radius: 50px; text-align: center; background:  rgba(99, 100, 97, 0.651);   margin: 50px; font-size: 25px; font-weight: bold; ">
                     Crepe sale et Cornet
                 </summary>
-                <div class="prz"> <p >Crepe polet </p> <p> 300 DA </p> </div>
-                <div class="prz"> <p> Crepe viande </p> <p> 350 DA </p> </div>
-                <div class="prz"> <p> Crepe viking </p> <p> 500 DA </p> </div>
-                <div class="prz"> <p> Cornet</p> <p> 300 DA </p> </div>
+                <pre>Crepe polet             300 DA</pre>
+                <pre>Crepe viande            350 DA</pre>
+                <pre>Crepe viking            500 DA</pre>
+                <pre>Cornet                  300 DA</pre>
             </details>
         </span>
 
@@ -215,9 +310,9 @@
                     style="text-align: center;  border-radius: 80px;  background:  rgba(99, 100, 97, 0.651);  margin: 50px; font-size: 25px; font-weight: bold; ">
                     Salade de fruit
                 </summary>
-            <div class="prz"> <p >salade de fruits </p> <p> 300 DA </p> </div>
-            <div class="prz"> <p> viking </p> <p> 350 DA </p> </div>
-            <div class="prz"> <p> créme brulée  </p> <p> 250 DA </p> </div>     
+            <pre>salade de fruits        300 DA</pre>
+            <pre>viking                  350 DA</pre>
+            <pre>créme brulée            250 DA</pre>    
             </details>
         </div>
 
@@ -227,12 +322,9 @@
                     style="text-align: center; border-radius: 80px;  background:  rgba(99, 100, 97, 0.651);  margin: 50px; font-size: 25px; font-weight: bold; ">
                     boisson
                 </summary>
-            <pre
-                style="font-weight: bold; color: #160D0A; text-align:center ; font-size: 30px;">Coctail           400 DA</pre>
-            <pre
-                style="font-weight: bold; color: #160D0A; text-align:center ; font-size: 30px;">Royale            300 DA</pre>
-            <pre
-                style="font-weight: bold; color: #160D0A; text-align:center ; font-size: 30px;">Capuccino         150 DA</pre>
+            <pre>Coctail                 400 DA</pre>
+            <pre>Royale                  300 DA</pre>
+            <pre>Capuccino               150 DA</pre>
             </details>
         </div>
 
@@ -243,7 +335,8 @@
     <footer class="text-center text-white" id="footer" style="background-color: #51535386;">
         <!-- Grid container -->
         <div class="container p-4">
-            <!-- Section: Iframe -->
+            <!-- <a href="tel: 0770 71 70 25"> <img
+                                    src="281830_phone_circle_mobile_communication_call_icon.png"></a> Section: Iframe -->
             <section class="">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-6">
