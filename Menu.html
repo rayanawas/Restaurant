@@ -18,13 +18,13 @@
     <style>
         #sc {
             position: fixed;
-            top: 90%;
+            top: 95%;
             right: 20px;
         }
 
         #c {
             position: fixed;
-            top: 83%;
+            top: 50%;
             right: 25px;
 
         }
@@ -34,15 +34,6 @@
             height: 40px;
         }
 
-
-        .carousel-item img {
-            max-height: 360px;
-            object-fit: contain;
-        }
-
-        h5 {
-            text-align: center;
-        }
 
         footer img {
             width: 50px;
@@ -67,21 +58,7 @@
         details pre{
             font-size: 30px;
             font-weight: bold;
-            color: #160D0A;
             text-align:center ;
-        }
-        .prz{
-            display: flex;
-            width: 60%;
-            left:50%; 
-            transform: translate(30%,15%); 
-            color: #160D0A;
-            text-align: center;
-            justify-content: space-between;
-            
-        }
-        .prz p{
-            font-size: 30px;
         }
 
         @media screen and (width: 390px){
@@ -108,10 +85,10 @@
             width: 30px;
             height: 30px;
             margin: 12px;
-        }
+            }
          details pre{
-                    font-size: 15px;
-                }
+            font-size: 15px;
+            }
         }
         @media screen and (width: 360px){
            footer img {
@@ -199,28 +176,28 @@
         }
          
         }
-        @media screen and (min-width: 820px) {
+        @media screen and (width: 820px) {
             footer img {
             width: 55px;
             height: 55px;
             margin: 25px;
-        }
-        details pre{
+          }
+           details pre{
             font-size: 35px;
-        }
-        #c {
+          }
+           #c {
             top:81%;
             right: 10px;
             }
-        #sc {
+           #sc {
             top:85%;
             }
-        #berger{
+          #berger{
             margin-top: 20%;
-        }
-        #boisson{
+           }
+           #boisson{
             margin-bottom: 20%;
-        }
+           }
       }
         
     </style>
@@ -230,17 +207,17 @@
 
     <header id="header" style="height:20% !important;">
         <nav class="navbar navbar-expand-lg navbar navbar-light " style="background-color: #51535386; ">
-            <a class="navbar-brand" style="color: rgb(131, 129, 128);" href="index.html">Viking Donuts & Burger</a>
+            <a class="navbar-brand" style="font-weight: bold;" href="index.html">Viking Donuts & Burger</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: bold !important; color: rgb(131, 129, 128);" href="index.html">Home</a>
+                        <a class="nav-link" style="font-weight: bold !important; " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: bold !important; color: rgb(131, 129, 128);" href="Menu.html">Menu</a>
+                        <a class="nav-link" style="font-weight: bold !important; " href="Menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: bold !important; color: rgb(131, 129, 128);" href="#footer">About us</a>
+                        <a class="nav-link" style="font-weight: bold !important; " href="#footer">About us</a>
                     </li>
                 </ul>
             </div>
@@ -265,18 +242,18 @@
                 <summary
                     style=" text-align: center;  border-radius: 40px; background:  rgba(99, 100, 97, 0.651);  margin: 50px; font-size: 25px; margin-top: 60px; font-weight: bold; ">
                     Sandwich</summary>
-                 <div class="prz"> <p >Cheese berger </p> <p> 250 DA </p> </div>
-                 <div class="prz"> <p> Big Cheese berger  </p> <p> 400 DA </p> </div>
-                 <div class="prz"> <p> Chiken berger </p> <p> 200 DA </p> </div>
-                 <div class="prz"> <p> Tacos poulet  </p> <p> 350 DA </p> </div>
-                 <div class="prz"> <p> Tacos viande </p> <p> 350 DA </p> </div>
-                 <div class="prz"> <p> Tacos fois </p> <p> 400 DA </p> </div>
-                 <div class="prz"> <p> Meloufe poulet </p> <p> 250 DA </p> </div>
-                 <div class="prz"> <p> Meloufe viande  </p> <p> 300 DA </p> </div>
-                 <div class="prz"> <p> Meloufe fois </p> <p> 300 DA </p> </div>
-                 <div class="prz"> <p> Metloua poulet  </p> <p> 250 DA </p> </div>
-                 <div class="prz"> <p> Metloua viande </p> <p> 250 DA </p> </div>
-                 <div class="prz"> <p> Metloua fois  </p> <p> 300 DA </p> </div>
+                 <pre>Cheese berger           250DA</pre>
+                 <pre>Big Cheese berger       400DA</pre>
+                 <pre>Chiken berger           200DA</pre>
+                 <pre>Tacos poulet            350DA</pre>
+                 <pre>Tacos viande            350DA</pre>
+                 <pre>Tacos fois              400DA</pre>
+                 <pre>Meloufe poulet          250DA</pre>
+                 <pre>Meloufe viande          300DA</pre>
+                 <pre>Meloufe fois            300DA</pre>
+                 <pre>Metloua poulet          250DA</pre>
+                 <pre>Metloua viande          250DA</pre>
+                 <pre>Metloua fois            300DA</pre>
             </details>
         </div>
 
@@ -285,9 +262,9 @@
                 <summary
                     style="  border-radius: 50px; text-align: center; background:  rgba(99, 100, 97, 0.651);   margin: 50px; font-size: 25px; font-weight: bold; ">
                     pizza</summary>
-                <pre>pizza poulet            400 DA</pre>
-                <pre>pizza viande            400 DA</pre>
-                <pre>pizza speciale          550 DA</pre>
+                <pre>pizza poulet            400DA</pre>
+                <pre>pizza viande            400DA</pre>
+                <pre>pizza speciale          550DA</pre>
             </details>
         </span>
 
@@ -297,10 +274,10 @@
                     style="border-radius: 50px; text-align: center; background:  rgba(99, 100, 97, 0.651);   margin: 50px; font-size: 25px; font-weight: bold; ">
                     Crepe sale et Cornet
                 </summary>
-                <pre>Crepe polet             300 DA</pre>
-                <pre>Crepe viande            350 DA</pre>
-                <pre>Crepe viking            500 DA</pre>
-                <pre>Cornet                  300 DA</pre>
+                <pre>Crepe polet             300da</pre>
+                <pre>Crepe viande            350da</pre>
+                <pre>Crepe viking            500da</pre>
+                <pre>Cornet                  300da</pre>
             </details>
         </span>
 
