@@ -19,6 +19,30 @@
       body{
         color: #765049;
       }
+      pre{ font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+       }
+      .overlay { 
+    position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;   
+  border-radius: 0px 0px 22px 22px;
+    margin-bottom: 3%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  PADDING: 0%;
+}
       #body{
         margin-bottom: -19%;
         background-color: rgb(110, 189, 192);
@@ -89,6 +113,15 @@
            }
 
         @media screen and (min-width: 280px){
+          pre{
+                font-size: 12px;
+                  MARGIN-TOP: 6%;
+            } 
+            #pics {
+              display: block;
+            }
+         
+          #imggal
             #pics{
             display: block;
           }
@@ -154,6 +187,12 @@
         }
 
         @media screen and (min-width: 375px){
+          pre{
+            font-size: 18px;
+           }
+           #makla{
+            padding:12px 0px 12px 0px;
+           }
           #btnmenu{
              margin: 0px 27% 6% 30%; WIDTH: 43%; 
             }
@@ -179,6 +218,9 @@
             text-align:center;
             width: 336px; margin-left: -74%;
            }
+           #pics{
+            display: block;
+           }
            #divshap{
             TRANSFORM: TRANSLATE(-33%, 13%); 
             top: 41%; LEFT: 47%;
@@ -201,6 +243,10 @@
            }
         }
         @media screen and (min-width: 390px){
+          .overlay{
+            width: 96%;
+            MARGIN-LEFT: 2%;
+          }
           footer{
             grid-template-rows: 47% 36%;
           }
@@ -210,6 +256,9 @@
         }
 
         @media screen and (width: 360px){
+          pre{
+            font-size: 17px;
+           }
            #galpic{
             width: 333px;
            }
@@ -264,7 +313,22 @@
           }
         }
 
+        @media screen and (min-width: 412px){
+          .overlay{
+            width: 91%;
+            MARGIN-LEFT: 4.5%;
+          }
+        }
+
         @media screen and (min-width: 414px){
+          pre{
+            font-size: 20px;
+           }
+           .overlay{
+            width: 91%;
+            MARGIN-LEFT: 4.5%;
+          }
+           
           #pics{
             display: block;
             text-align: center;
@@ -285,6 +349,14 @@
           #body {
          margin-bottom: -22%;
          }
+         pre {
+          font-size: 22px;
+            }
+            
+            .overlay {
+              width: 69%;
+               MARGIN-LEFT: 15.4%;
+           }
            
         }
 
@@ -301,6 +373,14 @@
           }
           #divshap {
          TRANSFORM: TRANSLATE(18%, -14%);
+          }
+          .overlay {
+           width: 48%;
+          MARGIN-LEFT: 25.4%;
+          } 
+          
+          pre{
+            font-size: 27px;
           }
             
         }
@@ -336,9 +416,19 @@
           footer {
            grid-template-rows: 33%;
           }
+          pre{
+            font-size: 27px;
+          }
+          .overlay {
+           width: 48%;
+          MARGIN-LEFT: 26%;
+          } 
        }
 
        @media screen and (min-width: 1200px) {
+        pre{
+            font-size: 25px;
+           }
         #btnmenu{
           margin: 0px 32% 6% 40%;
              WIDTH: 22%; 
@@ -428,17 +518,60 @@
    <section id="menu" style="background-color: rgb(207 192 189); color: rgb(118 79 72);"    >
      <h1 style="text-align: center;padding: 7% 7% 3% 7%;
      FONT-SIZE: 48px;">Discover the best food </h1>
-     <button id="btnmenu" >Order now</button>
+     <button id="btnmenu" ><a href="0645555553"> Call now</a></button>
     </section>
 
     <section id="gallery" style="background-color:rgb(110, 189, 192);  PADDING: 4%; ">
       <div id="pics">
-        <img id="galpic"  src="992024901_n.jpg">
-        <img id="galpic"  src="1949777589.jpg">
-        <img id="galpic" src="ef13294436.jpg">
-        <img id="galpic" src="7f49074a94e4.jpg">
-        <img id="galpic"  src="40ef8d4b42a0.jpg">
-        <img id="galpic"  src="735559427309442_n.jpg">
+        <div>  <div  class="container"><img id="galpic"  src="992024901_n.jpg"><div class="overlay"><button id="btnmenu" onclick="btn('makla1')">More</button></div></div>
+          <div id="makla" ><div id="makla1" style="display: none;">
+            <pre>Escalope                250DA</pre>
+            <pre>Merguez                 250DA</pre>
+            <pre>Poulet                  250DA</pre>
+            <pre>Spécial                 250DA</pre>
+            <pre>Double                  350DA</pre>
+          </div></div> </div>
+        <div><div  class="container"> <img id="galpic"  src="1949777589.jpg"><div class="overlay"><button id="btnmenu" onclick="btn('makla2')">More</button></div></div>
+          <div id="makla" ><div id="makla2" style="display: none;">
+          <pre>Escalope                250DA</pre>
+          <pre>Merguez                 250DA</pre>
+          <pre>Poulet                  250DA</pre>
+          <pre>Spécial                 250DA</pre>
+          <pre>Double                  350DA</pre>
+          </div></div></div>
+
+        <div><div  class="container"><img id="galpic" src="ef13294436.jpg"><div class="overlay"><button id="btnmenu" onclick="btn('makla3')">More</button></div></div>
+           <div id="makla" ><div id="makla3" style="display: none;">
+            <pre>Escalope                250DA</pre>
+            <pre>Merguez                 250DA</pre>
+            <pre>Poulet                  250DA</pre>
+            <pre>Spécial                 250DA</pre>
+            <pre>Double                  350DA</pre>
+          </div></div></div>
+        <div><div  class="container"><img id="galpic" src="7f49074a94e4.jpg"><div class="overlay"><button id="btnmenu"onclick="btn('makla4')">More</button></div></div>
+           <div id="makla"  ><div id="makla4" style="display: none;">
+          <pre>Escalope                250DA</pre>
+          <pre>Merguez                 250DA</pre>
+          <pre>Poulet                  250DA</pre>
+          <pre>Spécial                 250DA</pre>
+          <pre>Double                  350DA</pre>
+           </div></div></div>
+        <div> <div  class="container"><img id="galpic"  src="40ef8d4b42a0.jpg"><div class="overlay"><button id="btnmenu" onclick="btn('makla5')">More</button></div></div>
+          <div id="makla" ><div id="makla5" style="display: none;">
+           <pre>Escalope                250DA</pre>
+           <pre>Merguez                 250DA</pre>
+           <pre>Poulet                  250DA</pre>
+           <pre>Spécial                 250DA</pre>
+           <pre>Double                  350DA</pre>
+          </div></div></div>
+        <div><div  class="container"><img id="galpic"  src="735559427309442_n.jpg"><div class="overlay"><button id="btnmenu" onclick="btn('makla6')">More</button></div></div>
+          <div id="makla" ><div id="makla6" style="display: none;">
+           <pre>Escalope                250DA</pre>
+           <pre>Merguez                 250DA</pre>
+           <pre>Poulet                  250DA</pre>
+           <pre>Spécial                 250DA</pre>
+           <pre>Double                  350DA</pre>
+          </div></div></div>
       </div>
     </section>
 
@@ -467,6 +600,18 @@
         </div>
     </footer>
 
+
+    <script>
+    function btn(a){
+    var makl =document.getElementById(a);
+    if (makl.style.display=='none'){
+      makl.style.display='block';
+    }else{
+      makl.style.display='none';
+    }
+   
+    }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
