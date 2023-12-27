@@ -44,9 +44,6 @@
             grid-template-columns: 26% 74%;
             BACKGROUND-COLOR:  hwb(24deg 12% 40%); 
         }
-        .test {
-            background-color: rgb(255, 99, 87);
-       }
        #tit{
         color: rgb(0, 0, 0); padding-top: 34%; font-size: 65PX; 
         font-weight: var(--head-fontWeight);
@@ -191,11 +188,10 @@
             FONT-SIZE: 24px;
         }
         .test{
-            margin-bottom: -278%;
-            background-color: rgb(255, 99, 87);
+            margin-bottom: -316%;
         }
         #tit{
-            padding-top: 123%;
+            padding-top: 120%;
             font-size: 35PX;
         }
         #p{
@@ -218,11 +214,12 @@
         }
         #DESC{
              font-size: 15px; 
-            padding-bottom: 35%;
-            PADDING-TOP: 17%;
+            padding-bottom: 14%;
+            PADDING-TOP: 8%;
         }
         #colorBG{
-            PADDING: 11%;
+            PADDING: 7%;
+            background-color:hwb(24deg 12% 40% / 75%);
         }
         
         }
@@ -241,8 +238,10 @@
             PADDING: 13%;
         }
         .test{
-            background-color: rgb(255, 99, 87);
             margin-bottom: -254%;
+        }
+        #about2{
+            text-align: center;
         }
         
         }
@@ -355,7 +354,7 @@
         
         }
 
-        @media screen and (width: 820px){
+        @media screen and (min-width: 820px){
             #food{
             grid-template-columns: repeat(2,1fr); 
             PADDING-BOTTOM: 10%;
@@ -415,7 +414,7 @@
             MARGIN-LEFT: -5%;
             }
         #imggal{
-            width: 379px;
+            width: 339px;
         }
         #p{
             font-size: 0px;
@@ -447,9 +446,8 @@
 
         }
         #divgal{
-            grid-template-columns: repeat(2,1fr);
-            grid-column-gap: 1%;
-            grid-row-gap: 2%;
+            display: block;
+            text-align: center;
         }
         .test{
             margin-bottom: -161%;
@@ -505,11 +503,10 @@
         }
 
         @media screen and (min-width: 540px){
-         #divgal {
-            grid-template-columns: repeat(1,1fr);
-            grid-row-gap: 1%;
-            MARGIN-LEFT: 11%;
-         }
+           #divgal{
+            display: block;
+            text-align: center;
+        }
          #food{
             PADDING-LEFT: 3%;
          }
@@ -523,7 +520,7 @@
              PADDING: 28%;
             }
          #DESC{
-            padding-bottom: 58%;
+            padding-bottom: 44%;
             PADDING-TOP: 5%;
          }
          #tit {
@@ -537,7 +534,7 @@
             padding-bottom: 4%;
             grid-row-gap: 8%;
             MARGIN-LEFT: 0%;
-            padding-left: 9%;
+            padding-left: 0%;
             }
             pre{
             font-size: 25px;
@@ -550,6 +547,7 @@
         grid-row-gap: 4%;
             MARGIN-BOTTOM: 0%;
             MARGIN-LEFT: 0%;
+            display: grid;
         }
         footer{
             grid-template-columns: 26% 74%;
@@ -578,7 +576,7 @@
         }
         #DESC{
             font-size: 32px; 
-            padding-bottom: 9%;
+            padding-bottom: 10%;
             PADDING-TOP: 0%;
         }
         #colorBG{
@@ -591,7 +589,7 @@
             font-size: 1.5rem;
         }
         #tit{
-            padding-top: 34%;
+            padding-top: 26%;
     font-size: 65PX;
         }
         
@@ -603,16 +601,14 @@
 </head>
 
 <body >
-    <section class="test relative" >
+    <section class="test " >
       
-        <div data-text-color="#000000" class="relative z-10 flex justify-center flex-none break-word transition-all duration-300 pointer-events-none items-end fix-safari-flickering" data-combine-with-header="true" style="min-height: calc(100vh - 0px); margin-top: -88px; padding-top: 88px;">
-            <div >
-                <div class="absolute inset-0 z-5 transition-all duration-300" style="background-color: rgb(255, 99, 87); ">
+        <div  class=" justify-center "style="min-height: calc(100vh - 0px); margin-top: -88px; padding-top: 88px;">
             
    
-                <div class="absolute inset-0 z-0 transition-all duration-300" style="background-image: url(&quot;https://images.unsplash.com/photo-1627378378952-a736d8e12219?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxMnx8ZmFzdGZvb2R8ZW58MHx8fHwxNzAxODAyMzU5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&quot;); background-position: center center; background-size: cover;">
+                <div  style="background-image: url('photo-16273783.jpg'); background-position: center center; background-size: cover;">
              
-        <header id="header" style="height:20% !important;" >
+         <header id="header" style="height:20% !important;" >
             <nav class="navbar navbar-expand-lg navbar navbar-light " >
             <a class="navbar-brand" href="#" >Danny</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -636,15 +632,15 @@
                 </div>
                 
             </nav>
-        </header>
+         </header>
                 
-        <div class="relative z-10 container mx-auto px-5 md:px-6 transition-all duration-300 pt-8 lg:pt-32 pb-8 lg:pb-32"><div class="relative z-10 w-full h-full opacity-100 translate-y-0" >
-                    <div class="max-w-3xl transition-all duration-300 text-center mx-auto">
-                        <h2 id="tit" class="mb-6 break-word transition-all duration-300 text-center heading-xlarge" >Satisfy Your Cravings</h2>
+         <div class="  text-center  md:px-6  pt-8 lg:pt-32 pb-8 lg:pb-32">
+                        <h2 id="tit" class="mb-6  text-center" >Satisfy Your Cravings</h2>
                         <p id="DESC" >Indulge in delicious fast food at Danny's, the ultimate destination for food lovers in Algeria.</p>
-                    </div>
-                  </div>  
-        </div></div>    </div>  
+         </div>
+        </div>   
+        </div></div>
+
                             
         
     </section>
@@ -664,7 +660,7 @@
         <h1 style="    white-space: pre-line; padding-bottom: 2%; ">About us  </h1>
         <p>Welcome to Danny! We are a fast food business located in Algeria, dedicated to serving you delicious meals with a touch of excellence. Our passion for quality and customer satisfaction drives us to deliver the best dining experience for you.</p><p>At Danny, we take pride in our carefully crafted menu, which offers a wide range of mouthwatering fast food options. From juicy burgers to crispy fries, we strive to use fresh, high-quality ingredients to ensure every bite is a delight. Whether you are dining in or ordering to-go, our friendly staff is committed to providing exceptional service and making your visit a memorable one. Come and experience the taste of Danny!</p>
       </div>
-      <div style="display: list-item; width: 100%;  position: relative; ">
+      <div id="about2" style="display: list-item; width: 100%;  position: relative; ">
       <span style=" box-sizing: border-box; border-radius: 22px;"> <img alt="burger bun" src="photo-1542820242-dd9053219a22.jpg" decoding="async" data-nimg="fill" class="transition duration-300 md:rounded-xl lg:rounded-2xl" ></span>
 </div>
  </section>
