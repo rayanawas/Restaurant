@@ -282,10 +282,20 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #car1, #car2, #car3 {
     left:13%;
     }
+    #item {
+        MARGIN: 0px 0 0 -8%;
+        PADDING: 70% 18% 37% 18%;
+    }
   
 }
 
 @media screen and (min-width: 375px) {
+    .cartTab {
+        width: 359px;
+    }    
+    .listCart .item {
+        gap: 0px;
+    }
   iframe {
         width: 373px;
     }
@@ -299,6 +309,207 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #img_car {
         width: 303px;
         height: 189px;
+    }
+}
+
+@media screen and (min-width:390px){
+    #serim {
+        width: 263px;
+        height: 198px;
+    }
+    #h1 {
+        font-size: 42px;
+    }
+    #car1, #car2, #car3 {
+        left: 10%;
+    }
+    iframe {
+        width: 392px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    iframe {
+        width: 411px;
+    }
+    #car1, #car2, #car3 {
+        left: 14%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    
+    #img_car {
+        width: 332px;
+        height: 203px;
+    }
+    iframe {
+        width: 415px;
+    }
+}
+
+@media screen and (min-width:540px){
+    #service {
+        grid-template-columns: repeat(1,1.3fr);
+    }
+    .title {
+        font-size: xx-large;
+    }
+    header {
+        padding: 17px 0;
+    }
+    #h1 {
+        font-size: 47px;
+    }
+    .btn {
+        font-size: 21px;
+    }
+    #BG {
+        background-position: 84%;
+    }
+    #serim {
+        width: 301px;
+        height: 203px;
+    }
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #car1, #car2, #car3 {
+        left: 21%;
+    }
+    iframe {
+        width: 535px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: xx-large;
+    }
+    header {
+        padding: 20px 0;
+        WIDTH: 100%;
+    }
+    #h1 {
+        font-size: XXX-LARGE;
+    }
+    #BG {
+        background-position: right;
+    }
+    #item {
+        MARGIN: 0px 0 0 -10%;
+        PADDING: 41% 18% 24% 18%;
+    }
+    #service {
+        grid-template-columns: repeat(3,1.3fr);
+    }
+    #serim {
+        width: 253px;
+        height: 198px;
+    }
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .btn {
+        padding: 2%;
+        font-size: 23px;
+    }
+    #car1, #car2, #car3 {
+         grid-template-columns: repeat(2,1fr);
+         left: 4%;
+    }
+    #foo {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .title {
+        font-size: xx-large;
+    }
+    header {
+        padding: 20px 0;
+        WIDTH: 100%;
+    }
+    #h1 {
+        font-size: XXX-LARGE;
+    }
+    #BG {
+        background-position: right;
+    }
+    #item {
+        MARGIN: 0px 0 0 -10%;
+        PADDING: 40% 18% 21% 18%;
+    }
+    #service {
+        grid-template-columns: repeat(3,1.3fr);
+    }
+    #serim {
+        width: 253px;
+        height: 198px;
+    }
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #car1, #car2, #car3 {
+         grid-template-columns: repeat(2,1fr);
+         left: 5%;
+    }
+    #foo {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:912px){
+    #item {
+        MARGIN: 0px 0 0 -10%;
+        PADDING: 37% 18% 17% 18%;
+    }   
+    #car1, #car2, #car3 {
+        left: 7%;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    #BG{
+        background-position: left; 
+    }
+    header {
+        padding: 20px 0;
+        WIDTH: 100%;
+    }
+    #h1 {
+        font-size: 70px;
+    }
+    #item{
+        MARGIN: 0px 0 0 -1%;  
+        PADDING: 19% 16% 11% 16%;
+    }
+    #serim{
+        width: 354px;
+        height: 246px;
+        border-radius: 12px;
+    }
+    .listProduct {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #car1, #car2, #car3 {
+        display: flex;
+        left: 0%;
+    }
+    #foo {
+        grid-template-columns: repeat(2,1fr);
+        GAP: 10%;
+    }
+    iframe{
+        width: 484px; height: 300px; 
+        PADDING: 2%;
+    }
+    .btn{
+        padding: 1%;
+        font-size: 22px;
+        margin-left: 5%;
+        MARGIN-TOP: 3%;
     }
 }
 
