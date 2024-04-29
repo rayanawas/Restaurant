@@ -10,7 +10,7 @@ body{
     transition: transform .5s;
     PADDING-TOP: 8%;
 }
-svg{
+#svg{
     width: 30px;
 }
 header{
@@ -81,7 +81,9 @@ header{
     padding: 5px 10px;
     margin-top: 3%;
     border-radius: 20px;
-    POSITION: absolute; LEFT: 61%;
+    POSITION: absolute;
+    TEXT-ALIGN: center;
+    RIGHT: 21%;
 }
 
 #h1{
@@ -211,6 +213,10 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 #img_car{
     width: 300px; height: 174px;
+}
+#svgg{
+    width:52px;
+    height:39px;
 }
 
 @media screen and (min-width: 280px) {
