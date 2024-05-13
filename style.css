@@ -220,6 +220,17 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 280px) {
+    #div_p{
+        BACKGROUND-COLOR: #403d39;
+        PADDING-LEFT: 0%;  
+    }
+    #pp{
+        margin: 0; 
+      border-top: 1px solid white;
+      padding: 1%; 
+      TEXT-ALIGN: CENTER; COLOR: WHITE;
+      WIDTH: auto;
+    }
     #BG{
         background-position: 81%; 
     }
@@ -278,6 +289,15 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 360px) {
+    #div_p{
+        PADDING-LEFT: 0%;  
+    }
+    #pp{
+        margin: 0; 
+        padding: 1%; 
+      TEXT-ALIGN: CENTER;
+      WIDTH: auto;
+    }
     iframe {
         width: 358px;
         PADDING: 2%;
@@ -296,6 +316,16 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 375px) {
+    #div_p{
+        BACKGROUND-COLOR: #403d39;
+        PADDING-LEFT: 0%;  
+    }
+    #pp{
+        margin: 0; 
+        padding: 1%; 
+      TEXT-ALIGN: CENTER;
+      WIDTH: auto;
+    }
     .cartTab {
         width: 359px;
     }    
@@ -389,6 +419,16 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 768px) {
+    #div_p{
+        BACKGROUND-COLOR: #403d39;
+        PADDING-LEFT: 0%;  
+    }
+    #pp{
+        margin: 0; 
+        padding: 1%; 
+      TEXT-ALIGN: CENTER;
+      WIDTH: auto;
+    }
     .title {
         font-size: xx-large;
     }
@@ -477,6 +517,15 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 1024px) {
+    #div_p{
+       PADDING-LEFT: 28%;  
+    }
+    #pp{
+        margin: 0;
+      padding: 1%; 
+      TEXT-ALIGN: CENTER; 
+      WIDTH: 598px;
+    }
     #BG{
         background-position: left; 
     }
