@@ -10,6 +10,35 @@ body{
     transition: transform .5s;
     PADDING-TOP: 8%;
 }
+input{
+    background-color: #52504ac2;
+    border: none;
+    border-radius: 8px;
+    padding: 2%;
+    margin: 2%;
+    WIDTH: 244PX;
+    border-color: #ccc5b9;
+    border-width: thin;
+    border-style: solid;
+    margin-bottom: 15%;
+}
+#buton{
+    margin-left: 12%;
+}
+#arrow{
+    background-color: #58544c;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+#arrow img{
+    padding: 7%;
+    margin: 23%;
+}
+#p{
+    margin:0%;
+    font-size: 19px;
+}
 #svg{
     width: 30px;
 }
@@ -23,6 +52,23 @@ header{
     WIDTH:100%;
     position: fixed;
    
+}
+#totale , #cop{
+    font-size: 23px;
+    text-align: center;
+    margin: 0px;
+    align-self: end;
+    margin-bottom: 2%;
+}
+#tout,#cop1{
+    font-size: 31px;
+    margin-bottom: -17px;
+    text-align: center;
+}
+#priceDisplay,#cop2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -13px;
 }
 .icon-cart{
     position: relative;
@@ -101,8 +147,6 @@ header{
     border-color: white;
     padding: 1%;
     font-size: 22px;
-    margin-left: 5%;
-    MARGIN-TOP: 3%;
 }
 #item{
     MARGIN: 0px 0 0 -1%;
@@ -134,9 +178,23 @@ body.showCart .container{
     transform: translateX(-250px);
 }
 .cartTab h1{
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     margin: 0;
     font-weight: 300;
+}
+.quantity{
+    display: grid;
+    JUSTIFY-CONTENT: space-around;
+}
+.minus{
+    transform: rotate(91deg);
+    justify-self: center;
+    font-weight: bold;
+}
+.plus{
+    transform: rotate(87deg);
+    justify-self: center;
+    font-weight: bold;
 }
 .cartTab .btn{
     display: grid;
@@ -157,19 +215,19 @@ body.showCart .container{
 }
 .listCart .item{
     display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
+    grid-template-columns: 69px 147px 28px 1fr 40px;
     gap: 10px;
     text-align: center;
     align-items: center;
 }
 .listCart .quantity span{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: #eee;
+    display: inline-table;
+    width: 22px;
+    height: 21px;
     border-radius: 50%;
-    color: #555;
+    color: #eee;
     cursor: pointer;
+    font-size: 18px;
 }
 .listCart .quantity span:nth-child(2){
     background-color: transparent;
@@ -218,6 +276,78 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     width:52px;
     height:39px;
 }
+.color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+           /*-------------------*/
+#li{
+    list-style: none;
+    JUSTIFY-SELF: center;
+    PADDING: 10%;
+}
+#list ul{
+    display: grid;
+    padding: 0%;
+    GAP: 13px;
+    margin-top: 14px;
+    place-content: inherit;
+
+}
+#header{
+       background-color: #403d39ad;
+    width: 121px;
+    border-radius: 0px 18px 18px 0px;
+    HEIGHT: 632px;
+    MARGIN-TOP: 1%;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(1,minmax(100px,235px));
+}
+img{
+    width: 35px;
+    margin: 8px;
+}
+#oNs{
+    JUSTIFY-CONTENT: center;
+    TEXT-ALIGN: CENTER;
+    ALIGN-ITEMS: center;
+    MARGIN: 66px 66px 66px 91px;
+}
+#stati{
+    display: grid;
+    grid-template-columns: repeat(4, 267px);
+    grid-template-rows: repeat(3, 166px);
+    margin-left: 4%;
+    gap: 18px;
+    margin-top: -4%;
+}
+
+#divstat{
+    width: 255px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 29px 1px grey;
+    background-color: #ede4d6;
+}
+#divstatt{
+    width: 830px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 29px 1px grey;
+    background-color: #ede4d6;
+}
+
+/*------------------------*/
+
+#bigdiv{
+    display: grid;
+     height: 66%;
+    BACKGROUND-COLOR: #bdb8b8; border-radius: 42px;
+    filter: drop-shadow(-10px 4px 14px black);
+    grid-template-columns: repeat(2,1fr); width: 70%; left: 15%; POSITION: absolute; TOP: 17%;
+}
 
 @media screen and (min-width: 280px) {
     #div_p{
@@ -251,8 +381,6 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     .btn {
         padding: 2%;
         font-size: 17px;
-        margin-left: 8%;
-        MARGIN-TOP: 4%;
     }
     #service{
         grid-template-columns: repeat(1,0.3fr);
@@ -271,13 +399,14 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         height: 198px;
     }
     .listProduct {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 131px);
+
     }
     #car1, #car2, #car3{
         display:grid; 
         grid-template-columns: repeat(1,1fr);
         position:relative;
-        left: 1%;
+        left: -3%;
         }
     #img_car{
         width: 277px;
@@ -285,6 +414,13 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         MARGIN-bottom: 3%;
         PADDING: 1%;
         border-radius: 20PX;
+    }
+    .container {
+        width: 90px;
+        margin-left: -10px;
+    }
+    #bigdiv{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
@@ -306,12 +442,20 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
          GAP: 0%;
     }
     #car1, #car2, #car3 {
-    left:13%;
+    left:9%;
     }
     #item {
         MARGIN: 0px 0 0 -8%;
         PADDING: 70% 18% 37% 18%;
     }
+    .container {
+        width: 900px;
+        margin-left: auto;
+    }
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
   
 }
 
@@ -368,9 +512,6 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     iframe {
         width: 411px;
     }
-    #car1, #car2, #car3 {
-        left: 14%;
-    }
 }
 
 @media screen and (min-width: 414px) {
@@ -419,6 +560,9 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 
 @media screen and (min-width: 768px) {
+    .btn{
+        margin-left:0%;
+    }
     #div_p{
         BACKGROUND-COLOR: #403d39;
         PADDING-LEFT: 0%;  
@@ -450,8 +594,8 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         grid-template-columns: repeat(3,1.3fr);
     }
     #serim {
-        width: 253px;
-        height: 198px;
+        width: 238px;
+        height: 182px;
     }
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
@@ -466,6 +610,9 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     }
     #foo {
         grid-template-columns: repeat(2,1fr);
+    }
+    iframe {
+        width: 502px;
     }
 }
 
@@ -561,10 +708,13 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         PADDING: 2%;
     }
     .btn{
+        margin-left:0%;
         padding: 1%;
         font-size: 22px;
-        margin-left: 5%;
         MARGIN-TOP: 3%;
+    }
+    #bigdiv{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 

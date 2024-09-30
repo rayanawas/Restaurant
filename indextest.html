@@ -1,6 +1,4 @@
-<?php
-include 'connxion.php'; 
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,40 +168,7 @@ include 'connxion.php';
             </div>
     </div>
 
-    <?php
-
-
-    $date=date('Y/m/d');
-    $sql="SELECT * FROM commande1 ";
-    $result=mysqli_query($con,$sql);
-    while($donnees= mysqli_fetch_array($result))			
-        {
-         $n=$donnees['id'];    
-         $n=$n+1;
-        }
-        
-        
-        @$array = json_decode($_POST['array'], true);
-    @$com=' ';
-        if (is_array($array) || is_object($array)) {
-     foreach  ($array as $item) {
-     $client = $item['client'];   
-     $numero =$item['num'];  
-     $color =$item['color'];  
-     $livra =$item['livra'];  
-     $addr = $item['addr']; 
-     $name = $item['name']; 
-     $price = $item['price']; 
-     $total=($item['price']*$item['qnt'])+$total;
-     $qnt=$item['qnt'];
-     @$com .= '*'.$name.' ('.$color.')'.' : '.$qnt.' x '.$price.' da'.'<br>' ;
-     }}
-     @$com= rtrim($com, '* () : x da <br>');
-     if((isset( $_POST['array']))   ){  
-      $sql="INSERT INTO `commande1` VALUES('$n','$com','$total','$client','$addr','$numero','$livra','$date','0')"; 
-      $result=mysqli_query($con,$sql);
-       } 
-    ?>
+   
 
 
   <script>
