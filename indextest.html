@@ -1,0 +1,218 @@
+<?php
+include 'connxion.php'; 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>My store</title>
+    <link href="image/218076-200.png" rel="icon">
+    <link href="image/218076-200.png" rel="shotcut"/>
+    <link href="image/218076-200.png" rel="apple-touch-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body class="">
+
+    <header> 
+        <div class="title">DZ-PACK</div>
+        <div class="icon-cart">
+            <svg id="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+            </svg>
+            <span>0</span>
+        </div>
+    </header>
+    
+    <div id="BG">
+      <div id="item"> 
+        <h1 id="h1">Revolutionize your<br>packaging solution</h1>
+        <a href="#cont"><button id="buton" class="btn">Order now</button></a>
+      </div>
+    </div>
+    
+    <h1 style="  margin: 5% 0 0 7%; FONT-SIZE: 3rem;">Packaging services</h1>
+    <div id="service">
+        
+        <div style="TEXT-ALIGN: center;">
+            <img id="serim" src="image/depositphotos.jpg" alt="" srcset="">
+            <h2>Customized packaging solution</h2>
+        </div>
+        <div style="TEXT-ALIGN: center;">
+            <img id="serim" src="image/shippin.jpg" alt="" srcset="">
+            <h2>Quality control</h2>
+        </div>
+        <div style="TEXT-ALIGN: center;">
+            <img id="serim" src="image/LSPler2j1.png" alt="" srcset="">
+            <h2>Secure shipping</h2>
+        </div>
+    </div>
+    
+    <div class="container" id="cont">
+        
+        <div class="listProduct">
+
+        </div>
+    </div>
+    
+    <div id="Gallery">
+        <h2 style="text-align: center; MARGIN: 5% 0 3% 0;">Gallery</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" style="margin-bottom:5%;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="car1">
+                   <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block ">
+                   <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                   <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                </div>
+              </div>
+              <div class="carousel-item" style=" JUSTIFY-CONTENT: SPACE-AROUND;">
+                <div id="car2">
+                  <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block  " >
+                  <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                  <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                </div>
+              </div>
+              <div class="carousel-item" style=" JUSTIFY-CONTENT: SPACE-AROUND;">
+                <div id="car3">
+                 <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                 <img id="img_car" src="image/MG_Packhelp_02_1897_2000px.jpg" class="d-block " >
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    <div id="foo" >
+     <div>
+      <div style="    margin: 7% 0% 0% 4%;">
+        <h2 style="PADDING: 4%;" >DZ-PACK</h2>
+        <div style="display: grid; MARGIN-LEFT: 13%; margin-bottom: 11%; GAP: 3%; grid-template-columns: repeat(4,1fr); width: 212px;"> 
+          <a href=""><img src="image/facebook.png" alt="" srcset=""></a>
+          <a href="" ><img src="image/instagram.png" alt="" srcset=""></a>
+          <a href=""><img src="image/telephone.png" alt="" srcset=""></a>
+          <a href=""><img src="image/mail.png" alt="" srcset=""></a>
+        </div>
+      </div>
+     </div>
+      <div style="    TEXT-ALIGN: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204628.13596313284!2d3.1393309!3d36.73901844999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26977ea659f%3A0x4231102d38a36f49!2sAlger!5e0!3m2!1sfr!2sdz!4v1713436272666!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div id="div_p">
+      <p id="pp" >DZ-PACK © 2024</p>
+    </div>
+
+    <div class="cartTab">
+        <div style="display:flex;"><div onclick="arow()" id="arrow" style="display:none;"><img src="image/arrow.png" alt="" srcset=""></div>
+             <h1>Shopping Cart</h1></div> 
+        <div class="listCart" >   
+        
+        </div>
+           
+       <div >
+          <form method="POST" id="form" style=" margin-top: 5%; JUSTIFY-CONTENT: center;  display: none; width: 360px;" >
+          
+            <p id="p">Name</p>
+            <input  id="client" required  type="text" name="client" >
+            <p id="p">Number</p>
+            <input  id="numero" required  maxlength="10"  type="text" name="numero" >
+            <p id="p">Address</p>
+            <input id="addr" required  list="wil" type="text" name="addr"> 
+            <datalist  id="wil"  >
+            <option  value="Adrar"></option> 
+            <option  value="chlef"></option> 
+            <option  value="aghouet"></option> 
+             <option  value="Oum el bouaghi"></option> 
+             <option  value="Batna"></option> 
+            </datalist>
+
+            
+            <div style="display: grid; grid-template-columns: repeat(2,1fr); GRID-GAP: 15%;">
+             <div style="display: flex;">
+              <input  id="livv" type="radio" name="livraison" value="bureau" style=" height: 21px; WIDTH: 21px; margin-right: 7%; align-self: center;">
+              <p style="font-size: 20px;">Bureau</p>
+             </div>
+
+             <div style=" display: flex;">
+              <input   id="livv" type="radio" name="livraison" value="maison" style=" height: 21px; WIDTH: 21px; margin-right: 7%; align-self: center;">
+              <p style="font-size: 20px;">Maison</p>
+             </div>  
+            </div>
+          
+          </form>
+        </div>
+
+       <div style="display:flex; justify-content: space-between; "><p id="cop" >Sub totale</p><p id="totale"></p></div>
+  
+       <div style="display:flex; justify-content: space-between; "><p id="cop2">Livraison: </p><p id="priceDisplay"></p></div>
+       <div style="display:flex; justify-content: space-between;     margin-bottom: 2%;"><p id="cop1">Totale: </p><p id="tout"></p></div>
+            <div class="btn" id="first_button">
+                <button class="close">CLOSE</button>
+                <button class="checkOut" onclick="next()">CHECK OUT</button> 
+            </div>
+            <div class="btn" style="display:none;" id="sec_button">
+                <button class="closee" style="background-color:white;">CLOSE</button>
+                <button class="checkOut" onclick="order()">ORDER</button>
+            </div>
+    </div>
+
+    <?php
+
+
+    $date=date('Y/m/d');
+    $sql="SELECT * FROM commande1 ";
+    $result=mysqli_query($con,$sql);
+    while($donnees= mysqli_fetch_array($result))			
+        {
+         $n=$donnees['id'];    
+         $n=$n+1;
+        }
+        
+        
+        @$array = json_decode($_POST['array'], true);
+    @$com=' ';
+        if (is_array($array) || is_object($array)) {
+     foreach  ($array as $item) {
+     $client = $item['client'];   
+     $numero =$item['num'];  
+     $color =$item['color'];  
+     $livra =$item['livra'];  
+     $addr = $item['addr']; 
+     $name = $item['name']; 
+     $price = $item['price']; 
+     $total=($item['price']*$item['qnt'])+$total;
+     $qnt=$item['qnt'];
+     @$com .= '*'.$name.' ('.$color.')'.' : '.$qnt.' x '.$price.' da'.'<br>' ;
+     }}
+     @$com= rtrim($com, '* () : x da <br>');
+     if((isset( $_POST['array']))   ){  
+      $sql="INSERT INTO `commande1` VALUES('$n','$com','$total','$client','$addr','$numero','$livra','$date','0')"; 
+      $result=mysqli_query($con,$sql);
+       } 
+    ?>
+
+
+  <script>
+    
+  </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
